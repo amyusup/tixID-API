@@ -15,6 +15,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1", routeNavigator)
 
-app.listen(8000 || process.env.PORT, () => {
-  console.log(`Server running on PORT ${8000 || process.env.PORT}`);
+app.listen( process.env.PORT || 8000, () => {
+  console.log(`Server running on PORT ${ process.env.PORT || 8000 }`);
 });
